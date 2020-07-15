@@ -2,7 +2,8 @@ import React from "react";
 import PropTypes from "prop-types";
 
 const WelcomeScreen = (props) => {
-  const {errorsCount, onButtonClick} = {props};
+  const {errorsCount, onButtonClick} = props;
+  console.log(errorsCount, onButtonClick);
   return <section className="welcome">
     <div className="welcome__logo">
       <img src="img/melody-logo.png" alt="Угадай мелодию" width="186" height="83" />

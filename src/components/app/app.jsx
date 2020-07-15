@@ -6,15 +6,17 @@ const onWelcomeButtonClick = () => {};
 
 const App = (props) => {
   const {errorsCount} = props;
-  return <WelcomeScreen
-    errorsCount = {errorsCount}
-    onButtonClick={onWelcomeButtonClick}
-  />;
+
+  return (
+    <WelcomeScreen
+      errorsCount={errorsCount}
+      onButtonClick={onWelcomeButtonClick}
+    />
+  );
 };
 
 App.propTypes = {
   errorsCount: PropTypes.number.isRequired,
 };
-
 
 export default App;
